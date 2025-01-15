@@ -8,6 +8,7 @@ Examples(Input1, Input2 --> Output):
 
 public static void main(String[] args) {
     System.out.println(rps("scissors", "rock"));
+    System.out.println(rockPaperScissors("rock", "scissors"));
 }
 
 public static String rps(String p1, String p2) {
@@ -20,5 +21,18 @@ public static String rps(String p1, String p2) {
         return "Player 1 won!";
     }
     return "Player 2 won!";
+}
+
+public static String rockPaperScissors(String p1, String p2){
+    Map<String, String> rps = new HashMap<>();
+    rps.put("scissors", "paper");
+    rps.put("rock", "scissors");
+    rps.put("paper", "rock");
+
+    if (p1.equals(p2)) {
+        return "Draw!";
+    }
+
+    return rps.get(p1).equals(p2) ? "Player 1 won!" :  "Player 2 won!";
 }
 

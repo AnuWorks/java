@@ -19,8 +19,7 @@ public class StreamOperations {
 
         // Map
         List<Integer> evenNumbers = numbers.stream()
-            .filter(number -> number % 2 == 0)
-            .map(number -> number).toList();
+            .filter(number -> number % 2 == 0).toList();
         System.out.println("Even numbers: " + evenNumbers);
 
 

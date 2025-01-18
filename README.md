@@ -1,2 +1,2 @@
 # java
-Java examples, Practice.
+Java Algos & Practice.

@@ -15,7 +15,7 @@ public class DSAPriorityQueue {
         queue.offer(1.1);
 
         while (!queue.isEmpty()){
-            System.out.println(queue.poll());
+            System.out.println("poll :" + queue.poll());
         }
         System.out.println("**********");
         // This PriorityQueue sorts based on default comparator
@@ -32,7 +32,7 @@ public class DSAPriorityQueue {
         pQueue.offer(1.1);
 
         while (!pQueue.isEmpty()){
-            System.out.println(pQueue.poll());
+            System.out.println("poll :" + pQueue.poll());
         }
 
     }

@@ -2,6 +2,7 @@ public class DSALinearSearch {
     public static void main(String[] args) {
 
         // Linear Search - Iterate through collection one element at a time
+        // Big O notation - O(n)
 
         int[] array = {9,4,5,67,3,1,87,56};
 

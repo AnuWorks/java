@@ -87,7 +87,7 @@ public class Java8StreamsBasics {
 
         // BinaryOperator
         // BiFunction<String, String, Integer> biFunction = (x, y) -> (x + y).length();
-        // Above Bifuntion we are passing 2 strings and getting 1 integer as return type
+        // Above BiFunction we are passing 2 strings and getting 1 integer as return type
         // Consider a scenario where we have input parameters and output parameter are of same type
         // In that case we can use BinaryOperator
         BinaryOperator<String> binaryOperator = (x, y) -> x + y;

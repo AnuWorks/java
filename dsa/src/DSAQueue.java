@@ -1,4 +1,6 @@
+import java.util.Comparator;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 
 public class DSAQueue {
@@ -16,6 +18,7 @@ public class DSAQueue {
         // Instead of add(), remove(), element() use offer(), poll(), peek() as prior throws exception.
 
         Queue<String> queue = new LinkedList<>();
+
 
         queue.offer("Karen");
         queue.offer("Chad");
@@ -44,6 +47,15 @@ public class DSAQueue {
         // System.out.println(queue.remove());
         System.out.println(queue.poll());
         System.out.println(queue.isEmpty());
+
+        //priority queue
+        Queue<String> pQueue = new PriorityQueue<>(Comparator.reverseOrder());
+        pQueue.offer("Anudeep");
+        pQueue.offer("Priya");
+        pQueue.offer("Avyukth");
+        System.out.println(pQueue.peek());
+
+
 
 
 

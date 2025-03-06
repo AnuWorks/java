@@ -6,6 +6,7 @@ public class FindPalindrome {
 
     public static void main(String[] args) {
 
+        System.out.println(findPalindrome(121));
         System.out.println(findPalindrome(-121));
     }
 

@@ -40,4 +40,10 @@ public class GraphForAMatrix {
             System.out.println();
         }
     }
+
+    // Method added for depth first search
+    public void depthFirstSearch(int src) {
+
+    }
+
 }

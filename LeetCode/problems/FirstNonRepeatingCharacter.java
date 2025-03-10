@@ -11,14 +11,11 @@ public class FirstNonRepeatingCharacter {
 
 
     public static Character findFirstNonRepeatingCharacter(String input) {
-
         Map<Character, Integer> charMap = new HashMap<>();
-
         // put all characters and count in the map
         for (int i = 0; i < input.length(); i++) {
             charMap.put(input.charAt(i), charMap.getOrDefault(input.charAt(i), 0) + 1);
         }
-
 
         // Check which character have count 1, return
         for (Character key : charMap.keySet()) {
@@ -28,7 +25,6 @@ public class FirstNonRepeatingCharacter {
             }
         }
 
-        // else, return null
         return null;
 
     }

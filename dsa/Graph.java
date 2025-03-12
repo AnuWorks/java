@@ -1,6 +1,8 @@
 package dsa;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Graph {
     ArrayList<Node> nodes;
@@ -48,6 +50,31 @@ public class Graph {
         dfsHelper(src, visited);
     }
 
+    public void breadthFirstSearch(int src) {
+        Queue<Integer> queue = new LinkedList<>();
+        boolean[] visited = new boolean[matrix.length];
+
+        // Add the src node to queue
+        queue.offer(src);
+        // Mark the node as visited
+        visited[src] = true;
+
+        while (!queue.isEmpty()) {
+
+            src = queue.poll();
+            System.out.println(nodes.get(src).data + " = visited");
+
+            // Look for any adjacent neighbours
+            for (int i = 0; i < matrix[src].length; i++) {
+                if (matrix[src][i] == 1 && !visited[i]) {
+                    queue.offer(i);
+                    visited[i] = true;
+                }
+            }
+
+        }
+    }
+
     private void dfsHelper(int src, boolean[] visited) {
         if (visited[src]) {
             return;
@@ -61,6 +88,5 @@ public class Graph {
                 dfsHelper(i, visited);
             }
         }
-        return;
     }
 }

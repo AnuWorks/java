@@ -1,4 +1,4 @@
-package forge.patterns;
+package forge.patterns.Singleton;
 
 public class TestClass {
     public static void main(String[] args) {

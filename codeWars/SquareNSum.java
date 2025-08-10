@@ -3,6 +3,8 @@
 For example, for [1, 2, 2] it should return 9 because */
 
 
+import java.util.Arrays;
+
 public static void main(String[] args) {
     System.out.println(squareSum(new int[] {1,2,2}));
 }

@@ -6,6 +6,9 @@ Examples(Input1, Input2 --> Output):
         "scissors", "rock" --> "Player 2 won!"
         "paper", "paper" --> "Draw!"*/
 
+import java.util.HashMap;
+import java.util.Map;
+
 public static void main(String[] args) {
     System.out.println(rps("scissors", "rock"));
     System.out.println(rockPaperScissors("rock", "scissors"));

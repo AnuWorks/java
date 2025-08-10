@@ -1,4 +1,5 @@
 package forge.patterns.factory;
 
-public class Factory {
+public abstract class Factory {
+    abstract String getName();
 }

@@ -1,4 +1,4 @@
-package forge.patterns;
+package forge.patterns.Singleton;
 
 public class Singleton {
     // 3. A private static Class variable
